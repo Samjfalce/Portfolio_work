@@ -132,7 +132,14 @@ h6 {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+.summary {
+    margin-top: 8px;
+}
+.wannado {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
 button {
     margin-left: 40px;
     background: none;
@@ -200,7 +207,6 @@ button:hover {
     .main {
         display: flex;
         justify-content: center;
-        
         flex-direction: column;
         margin-left: 16px;
         margin-right: 16px;
