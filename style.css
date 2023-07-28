@@ -94,7 +94,8 @@ h6 {
   margin-bottom: 104px;
 }
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center; 
   margin-left: 160px;
   margin-right: 160px;
@@ -130,4 +131,99 @@ h6 {
     background-image: url(Images/fcc_mockup.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+button {
+    margin-left: 40px;
+    background: none;
+    padding: 10px 40px;
+    font-family: "aoki_reg";
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    color: #d0d0d0;
+    transition: all 0.3s ease;
+}
+button:hover {
+    box-shadow: 0px 0px 20px white;
+    text-shadow: 0px 0px 20px white;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(Images/footer_cubes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 208px;
+    
+}
+.footer_logo {
+    display: flex;
+    align-self: center;
+    width: 238px;
+    height: 321px;
+    
+}
+.footer_contact {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.footer_social {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.email {
+    margin-top: -16px;
+}
+.social {
+    margin-top: 8px;
+}
+.link, .insta {
+    margin-top: -16px;
+}
+@media only screen and (max-width: 600px){
+    .nav a {
+        margin-left: -16px;
+    }
+    img {
+       margin-left: -16px;
+       
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        
+    }
+    .box1, .box2, .box3 {
+        border-radius: 10px;
+        width: 376px;
+        height: 329px;
+        justify-content: center;
+        
+    } 
+    button {
+        margin-bottom: 104px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    
+   
+
 }
